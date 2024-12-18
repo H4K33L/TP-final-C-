@@ -4,7 +4,7 @@ namespace TPfinalC
 {
     public class AppMenu
     {
-        //private Manage Parc;
+        private Manage parc;
         private static AppMenu _instance;
 
         public static AppMenu GetInstance()
@@ -18,12 +18,12 @@ namespace TPfinalC
 
         public AppMenu()
         {
-            //Parc = new Manage();
+            parc = new Manage();
 
             Interface();
         }
 
-        private static void Interface()
+        private void Interface()
         {
             Console.Clear();
 
@@ -39,22 +39,19 @@ namespace TPfinalC
                     switch (UserInput)
                     {
                         case 1:
-                            //Parc.();
-                            Console.Clear();
-                            Console.WriteLine(UserInput);
+                            ChoseCar();
                             break;
                         case 2:
-                            //Parc.();
                             Console.Clear();
-                            Console.WriteLine(UserInput);
+                            _instance.parc.ListCar();
                             break;
                         case 3:
-                            //Parc.();
+                            //parc.();
                             Console.Clear();
                             Console.WriteLine(UserInput);
                             break;
                         case 4:
-                            //Parc.();
+                            //parc.();
                             Console.Clear();
                             Console.WriteLine(UserInput);
                             break;
@@ -89,6 +86,54 @@ namespace TPfinalC
                 "| 5 - Quiter                        |\n"+
                 "+-----------------------------------+\n"
                 );
+        }
+
+        private void ChoseCar()
+        {
+            Console.Clear();
+            bool quit = true;
+            while (quit){
+                Console.WriteLine(
+                "+------------------------------------+\n"+
+                "| Add folowing modéle to the parck : |\n"+
+                "|                                    |\n"+
+                "| 1 - Merceges, Benz                 |\n"+
+                "| 2 - Pegeo, berlyngot               |\n"+
+                "| 3 - Reno, C4                       |\n"+
+                "| 4 - Exit                           |\n"+
+                "+------------------------------------+\n"
+                );
+                            
+                string UserInput = Console.ReadLine();
+                switch (UserInput)
+                {
+                    case "1":
+                        Console.Clear();
+                        _instance.parc.AddCar(new Merceges(_instance.parc.GetID()));
+                        Console.WriteLine("Car sucefuly added !\n");
+                        quit = false;
+                        break;
+                    case "2":
+                        Console.Clear();
+                        _instance.parc.AddCar(new Pegeo(_instance.parc.GetID()));
+                        Console.WriteLine("Car sucefuly added !\n");
+                        quit = false;
+                        break;
+                    case "3":
+                        Console.Clear();
+                        _instance.parc.AddCar(new Reno(_instance.parc.GetID()));
+                        Console.WriteLine("Car sucefuly added !\n");
+                        quit = false;
+                        break;
+                    case "4":
+                        quit = false;
+                        break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Enter a valid number !\n");
+                        break;
+                }
+            }
         }
     }
 }

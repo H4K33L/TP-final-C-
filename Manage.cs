@@ -1,43 +1,38 @@
 using System;
 using System.Collections.Generic;
 
-namespace TP_final_C_;
-
-class Manage
+namespace TPfinalC
 {
-    List<Car> cars = new List<Car>();
-    public void AddCar(Car car)
+    class Manage
     {
-        cars.Add(car);
-    }
+        List<Voiture> cars = new List<Voiture>();
 
-    public void ListCar()
-    {
-        foreach (var car in cars)
+        public void AddCar(Voiture car)
         {
-            Console.WriteLine($"Marque: {car.Marque}, Modèle: {car.Model}");
+            cars.Add(car);
         }
-    }
 
-    public void LocationCar()
-    {
+        public int GetID()
+        {
+            return cars.Count;
+        }
 
-    }
+        public void ListCar()
+        {
+            foreach (var car in cars)
+            {
+                car.AfficherVoiture();
+            }
+        }
 
-    public void ReturnCar()
-    {
+        public void LocationCar()
+        {
 
-    }
-}
+        }
 
-class Car
-{
-    public string Model { get; set;}
-    public string Marque { get; set;}
+        public void ReturnCar()
+        {
 
-    public Car(string model, string marque)
-    {
-        Model = model;
-        Marque = marque;
+        }
     }
 }

@@ -1,38 +1,36 @@
 using System;
 
-namespace TP_final_C
+namespace TPfinalC
 {
-class Voiture {
-        private int Id;
-        private string Marque;
-        private string Modele;
-        private int Annee;
-        private bool Statut {
-                set {Statut = value;}
-                get {
-                        if (Statut){
-                                return true;}
-                        else (Statut) {
-                                return false;}
-                }
-        }
+public class Voiture {
+    private int Id;
+    private string Marque;
+    private string Modele;
+    private int Annee;
+    private bool Statut = true;
 
-
-
-        public Voiture(int Id, string Marque, string Modele, int Annee, string Statut)
+    public Voiture(int id, string marque, string modele, int annee)
         {
-                Id = id;
-                Marque = marque;
-                Modele = modele;
-                Annee = annee;
-                Statut = statut;
+            Id = id;
+            Marque = marque;
+            Modele = modele;
+            Annee = annee;
         }
 
-    public bool Statut1 { get => Statut; set => Statut = value; }
+    public void set_Statut(bool NewStatut)
+    {
+        Statut = NewStatut;
+     }
 
     public void AfficherVoiture()
         {
-                Console.Writeline ("Id:"+ id "Marque:" + Marque "Modele:" + Modele "Annee:" + Annee "Statut:" + Statut1)
+                string ToPrint = "Id:"+ Id +"Marque:" + Marque +"Modele:" + Modele +"Annee:" + Annee +"Statut:";
+                if (Statut) {
+                        ToPrint += "Libre";
+                } else {
+                        ToPrint += "Occupé";
+                }
+                Console.WriteLine(ToPrint);
         }
 }
 }

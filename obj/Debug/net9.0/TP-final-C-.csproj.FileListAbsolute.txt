@@ -1,0 +1,15 @@
+C:\Users\David\Desktop\Ynov\TP-final-C-\bin\Debug\net9.0\TP-final-C-.exe
+C:\Users\David\Desktop\Ynov\TP-final-C-\bin\Debug\net9.0\TP-final-C-.deps.json
+C:\Users\David\Desktop\Ynov\TP-final-C-\bin\Debug\net9.0\TP-final-C-.runtimeconfig.json
+C:\Users\David\Desktop\Ynov\TP-final-C-\bin\Debug\net9.0\TP-final-C-.dll
+C:\Users\David\Desktop\Ynov\TP-final-C-\bin\Debug\net9.0\TP-final-C-.pdb
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.AssemblyInfoInputs.cache
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.AssemblyInfo.cs
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.sourcelink.json
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.dll
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\refint\TP-final-C-.dll
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.pdb
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\TP-final-C-.genruntimeconfig.cache
+C:\Users\David\Desktop\Ynov\TP-final-C-\obj\Debug\net9.0\ref\TP-final-C-.dll
